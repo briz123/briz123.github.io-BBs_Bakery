@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="playfair-display">
+    <title>B & B Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Domine:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+
+
+<!-- Media query for medium browser width -->
+<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="styles.css">
+
+
+<!-- Media query for full browser width -->
+<link rel="stylesheet" media="only screen and (min-width: 961px)" href="styles.css">
+
+<!-- Prevent smartphones from scaling pages down -->
+<meta name="viewport" content="initial-scale=1">
+</head>
+<body class="playfair-display">
+    <header >
+    	<div class= "flex-container">
+        <h1><strong>B & B Bakery</strong></h1>
+        
+        <h1><img src="bakerylogo.png" class="logo"></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Menu</a></li>
+                <li><a href="visit.html">Visit Us</a></li>
+                <li><a href="video.html">Video</a></li>
+                
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+    	<section id="store-front" class= "flex-container">
+            <h2>Welcome to Our Bakery!</h2>
+            <img src="storefront.jpeg" alt="StoreFront">
+            <p>Located in NYC</p>
+        </section>
+        <section id="special-offer">
+            <h2>Special Offer</h2>
+            <h1>Check out our delicious seasonal treats!</h1>
+            <button id="show-offer">Show Offer</button>
+            <div id="offer" >
+                <p>Buy one get one free on all pastries!</p>
+            </div>
+        </section>
+	    <h2>Featured Products</h2>
+        <section id="products" class= "flex-container-p">
+            
+            <div class="product">
+                <img src="cutecake.jpeg" alt="Product 1">
+                <h3>Signature Spring Green Cake</h3>
+                <p>Our most popular item!</p>
+            </div>
+            <div class="product">
+                <img src="LemonTarts.jpeg" alt="Product 2">
+                <h3>Lemon Tart</h3>
+                <p>Our Famous Lemon Tart</p>
+            </div>
+            <div class="product">
+                <img src="pastry.jpeg" alt="Product 3">
+                <h3>Pastries</h3>
+                <p>Pick up an entire box!</p>
+            </div>
+            
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 B & B Bakery. All rights reserved.</p>
+    </footer>
+
+<script>
+$(document).ready(function() {
+    $(".logo").click(function() {
+        $("body").css("background-color", "#b2edbe"); 
+    });
+    $("#show-offer").click(function() {
+        $("h1").text("New Products!"); 
+    });
+    $("#show-offer").mouseleave(function(){
+  		alert("Bye! Come Back soon!");
+  });
+  	$("#show-offer").dblclick(function(){
+  $("#offer").slidedown();
+	});
+
+
+});
+</script>
+ <!--Images:Cake: https://pin.it/5svxciMUi
+
+cakes: https://pin.it/1BszMZBkl
+
+Store: https://pin.it/2btyvzxLH
+
+Outside of store: https://pin.it/18CdXSkMp
+
+Pastry: https://pin.it/4MNo31RCt
+
+Tart: https://pin.it/769vJBwQK -->
+</body>
+</html>
